@@ -10,8 +10,8 @@ func _ready():
 	$CountLabel.text = INSTANCES_TEXT + str(instancesCount)
 	pass
 	
-	$RedGenerator.button_down.connect(count_new_instance())
-	$VioletGenerator.button_down.connect(count_new_instance())
+	$RedGenerator.button_down.connect(count_new_instance)
+	$VioletGenerator.button_down.connect(count_new_instance)
 
 func count_new_instance():
 	instancesCount += 1
