@@ -4,7 +4,9 @@
 [ext_resource type="PackedScene" uid="uid://dncxujshbxt8f" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.tscn" id="2"]
 [ext_resource type="PackedScene" uid="uid://nwbl03ueqyor" path="res://scenes/Buttons/RedGenerator/RedGenerator.tscn" id="3"]
 [ext_resource type="PackedScene" uid="uid://cey6fuiebmhpe" path="res://scenes/Buttons/Reset/Reset.tscn" id="4"]
+[ext_resource type="Script" uid="uid://cmnrv8hd5dq3" path="res://scenes/Buttons/RedGenerator/RedGenerator.gd" id="4_d2jjm"]
 [ext_resource type="Script" uid="uid://ba56weqd7il8n" path="res://scenes/Menu/Menu.gd" id="5"]
+[ext_resource type="Script" uid="uid://p5fnqswnr1tq" path="res://scenes/Buttons/VioletGenerator/VioletGenerator.gd" id="6_uqwds"]
 
 [sub_resource type="RectangleShape2D" id="1"]
 size = Vector2(1519.98, 67.3924)
@@ -22,12 +24,14 @@ offset_left = 154.0
 offset_top = 132.0
 offset_right = 282.0
 offset_bottom = 260.0
+script = ExtResource("4_d2jjm")
 
 [node name="VioletGenerator" parent="." unique_id=763685883 instance=ExtResource("2")]
 offset_left = 867.0
 offset_top = 116.0
 offset_right = 995.0
 offset_bottom = 244.0
+script = ExtResource("6_uqwds")
 
 [node name="Reset" parent="." unique_id=196128954 instance=ExtResource("4")]
 offset_left = 503.0
